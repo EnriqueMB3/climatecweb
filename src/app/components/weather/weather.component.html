@@ -1,0 +1,18 @@
+<div class="container" *ngIf="weather">
+    <div class="cards pt-5 text-light font-weight-light">
+        <h1>{{ weather.city }}, {{ weather.country }}</h1>
+        <h5 class="py-4 font-weight-light">
+            <img [src]="weather.icon" alt="">
+        </h5>
+        <h1 class="py-2 font-weight-light">{{ weather.temp }}&deg;</h1>
+
+        <h3>
+            <span class="px-4 font-weight-light">{{ weather.tempMin }}&deg;</span>
+            <span class="px-4 font-weight-light">{{ weather.tempMax }}&deg;</span>
+        </h3>
+
+        <h4 class="py-3 font-weight-light">
+            {{ weather.description }}
+        </h4>
+    </div>
+</div>
